@@ -29,21 +29,11 @@ class ProductProvider extends Component {
     handleCart = () => {
         console.log("Here is Cart Data")
     };
-    tester = () => {
-        console.log("State products :: ", this.state.products[0].inCart);
-        console.log("Data products :: ", storeProducts[0].inCart);
-
-        const tempProduct = [...this.state.products];
-        tempProduct[0].inCart = true
-
-        this.setState(() => {
-            return {products: tempProduct}
-        }, () => {
-            console.log("State products :: ", this.state.products[0].inCart);
-            console.log("Data products :: ", storeProducts[0].inCart)
-        });
-
+    addToCart= (id) => {
+        console.log("Here is Cart Data  and id :: ",id )
     };
+
+
 
     render() {
         return (
@@ -51,8 +41,8 @@ class ProductProvider extends Component {
                 ...this.state,
                 handleDetails: this.handleDetails,
                 handleCart: this.handleCart,
+                addToCart:this.addToCart
             }}>
-                <button onClick={this.tester}>Test</button>
                 {this.props.children}
             </ProductContext.Provider>
         );

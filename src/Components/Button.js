@@ -3,15 +3,17 @@ import styled from 'styled-components'
 export const ButtonContainer = styled.button`
     text-transform: uppercase;
     background: transparent;
-    font-size: 1.4rem;
+    font-size: 1rem;
     border: 0.05rem solid var(--lightBlue);
-    color: var(--lightBlue);
+    border-color: ${props=>props.cart? "var(--mainYellow)":"var(--lightBlue)"};
+    color: ${props=>props.cart? "var(--mainYellow)":"var(--lightBlue)"};
     border-radius: 0.5rem !important;
     cursor: pointer;
-    padding: 0.4rem ;
+    padding: 0.5rem ;
+    margin-right:1rem;
     &:hover{
         border: 0.05rem solid var(--mainDark);
-        background: var(--lightBlue);
-        color: var(--mainBlue);
+        background: ${props=>props.cart? "var(--mainYellow)":"var(--lightBlue)"};
+        color: var(--white);
     }
 `;
