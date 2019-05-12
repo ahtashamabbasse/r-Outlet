@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import './../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Link} from "react-router-dom";
+import PropTypes from 'prop-types'
+
 
 export default class Product extends Component {
 
@@ -36,6 +38,16 @@ export default class Product extends Component {
             </React.Fragment>
         );
     }
+}
+
+Product.propType={
+    product:PropTypes.shape({
+        id:PropTypes.number,
+        img:PropTypes.string,
+        title:PropTypes.string,
+        price:PropTypes.float,
+        inCart:PropTypes.bool,
+    }).isRequired
 }
 
 const Productwrapper = styled.div`

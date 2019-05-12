@@ -23,6 +23,7 @@ class ProductsList extends Component {
                                             return <Product key={product.id} product={product}
                                                             handleDetails={value.handleDetails}
                                                             handleCart={value.handleCart}
+
                                             />
                                         })
                                     }
