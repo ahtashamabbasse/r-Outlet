@@ -20,10 +20,15 @@ export default class Product extends Component {
                                     <Link to={'/details'}>
                                         <img alt={title}  src={'/' + img} className={'card-img-top'}/>
                                     </Link>
-                                    <button className={'cart-btn'} disabled={inCart} onClick={()=>value.addToCart(id)}>
+                                    <button className={'cart-btn'} disabled={inCart} onClick={
+                                        ()=>{
+                                            value.addToCart(id)
+                                            value.openModal(id)
+                                        }}
+                                    >
                                         {
                                             inCart ? (<p className={'text-capitalize mb-0'}>In Cart</p>) : (
-                                                <i className={'fas fa-cart-plus'}></i>)
+                                                <i className={'fas fa-cart-plus'}/>)
                                         }
                                     </button>
                                 </div>

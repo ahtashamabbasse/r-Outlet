@@ -8,6 +8,7 @@ import Details from "./Components/Details";
 import Cart from "./Components/Cart";
 import Default from "./Components/Default";
 import {Switch,Route} from "react-router-dom";
+import Modal from "./Components/modal";
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
               <Route exact  path={'/cart'} component={Cart}/>
               <Route path={'*'} component={Default}/>
           </Switch>
+          <Modal/>
       </React.Fragment>
     );
   }

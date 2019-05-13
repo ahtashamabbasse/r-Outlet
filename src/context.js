@@ -8,7 +8,9 @@ class ProductProvider extends Component {
     state = {
         products: [],
         cart: [],
-        productDetails: productDetails
+        productDetails: productDetails,
+        modalProduct:productDetails,
+        modalOpen:false
     };
     setProduct = () => {
         let tempProducts = [];
@@ -49,8 +51,23 @@ class ProductProvider extends Component {
             }
         )
     };
-    getItem = (id=3) => {
+    getItem = (id) => {
         return this.state.products.find(item => item.id === id);
+    };
+    openModal=id=>{
+        console.log('open modal id ',id)
+        const product=this.getItem(id);
+        this.setState({
+            modalProduct:product,
+            modalOpen:true
+        })
+
+    };
+    closeModal=()=>{
+        console.log('close modal')
+        this.setState({
+            modalOpen:false
+        })
     };
 
 
@@ -59,7 +76,9 @@ class ProductProvider extends Component {
             <ProductContext.Provider value={{
                 ...this.state,
                 handleDetails: this.handleDetails,
-                addToCart: this.addToCart
+                addToCart: this.addToCart,
+                openModal:this.openModal,
+                closeModal:this.closeModal,
             }}>
 
                 {this.props.children}
