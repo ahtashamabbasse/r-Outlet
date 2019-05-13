@@ -11,6 +11,7 @@ class Details extends Component {
             <React.Fragment>
                 <ProductConsumers>
                     {(value) => {
+                        //console.log("data in detials page ",value)
                         const {
                             id,
                             company,
@@ -20,6 +21,10 @@ class Details extends Component {
                             inCart,
                             info
                         } = value.productDetails;
+                        const detialsImage = {
+                            display: "block",
+                            margin: '0px auto'
+                        };
                         return (
                             <div className={'container py-5'}>
                                 {/* Title */}
@@ -32,7 +37,7 @@ class Details extends Component {
                                 {/*Product info*/}
                                 <div className={"row"}>
                                     <div className={"col-10 col-md-6 my-3 text-capitalize"}>
-                                        <img alt={title} src={"/" + img} className={'img-fluid'}/>
+                                        <img alt={title} src={"/" + img} className={'img-fluid'} style={detialsImage}/>
                                     </div>
                                     <div className={"col-10 col-md-6 my-3 text-capitalize"}>
                                         <h2>Model : {title}</h2>
@@ -54,7 +59,9 @@ class Details extends Component {
                                                     Back to products
                                                 </ButtonContainer>
                                             </Link>
-                                            <ButtonContainer cart disabled={inCart} onClick={()=>{value.addToCart(id)}}>
+                                            <ButtonContainer cart disabled={inCart} onClick={() => {
+                                                value.addToCart(id)
+                                            }}>
                                                 {inCart ? "inCart" : "Add to Cart"}
                                             </ButtonContainer>
 

@@ -4,7 +4,7 @@ import './../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Link} from "react-router-dom";
 import PropTypes from 'prop-types'
-
+import {ProductConsumers} from "../context";
 
 export default class Product extends Component {
 
@@ -12,22 +12,23 @@ export default class Product extends Component {
         const {id, title, img, price, inCart, count, total} = this.props.product;
         return (
             <React.Fragment>
-                <Productwrapper className="col-md-6 col-lg-3 mx-auto my-9 ">
+                <Productwrapper className="col-md-6 col-lg-3 mx-auto my-1">
                     <div className={'card'}>
-                        <div className={'img-container py-4'}>
-                            <Link to={'/details'}>
-                                <img src={'/' + img} className={'card-img-top'}/>
-                            </Link>
-                            <button className={'cart-btn'} disabled={inCart} onClick={this.props.handleCart}>
-
-                                {
-                                    inCart ? (<p className={'text-capitalize mb-0'}>In Cart</p>) : (
-                                        <i className={'fas fa-cart-plus'}></i>)
-                                }
-                            </button>
-
-
-                        </div>
+                        <ProductConsumers>
+                            {value=> (
+                                <div className={'img-container py-4'} onClick={() => value.handleDetails(id)}>
+                                    <Link to={'/details'}>
+                                        <img alt={title}  src={'/' + img} className={'card-img-top'}/>
+                                    </Link>
+                                    <button className={'cart-btn'} disabled={inCart} onClick={()=>value.addToCart(id)}>
+                                        {
+                                            inCart ? (<p className={'text-capitalize mb-0'}>In Cart</p>) : (
+                                                <i className={'fas fa-cart-plus'}></i>)
+                                        }
+                                    </button>
+                                </div>
+                            )}
+                        </ProductConsumers>
                         <div className={'card-footer d-flex justify-content-between'}>
                             <p className={'align-self-center mb-0'}>{title}</p>
                             <h5 className={'text-blue align-self-center mb-0 font-italic'}>{price}</h5>
@@ -40,13 +41,13 @@ export default class Product extends Component {
     }
 }
 
-Product.propType={
-    product:PropTypes.shape({
-        id:PropTypes.number,
-        img:PropTypes.string,
-        title:PropTypes.string,
-        price:PropTypes.float,
-        inCart:PropTypes.bool,
+Product.propType = {
+    product: PropTypes.shape({
+        id: PropTypes.number,
+        img: PropTypes.string,
+        title: PropTypes.string,
+        price: PropTypes.float,
+        inCart: PropTypes.bool,
     }).isRequired
 }
 
