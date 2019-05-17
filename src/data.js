@@ -1,6 +1,7 @@
 export const storeProducts = [
     {
         id: 1,
+        count:0,
         inCart: false,
         title: "Google pixel",
         img: 'images/a8.png',
@@ -10,6 +11,7 @@ export const storeProducts = [
     },
     {
         id: 2,
+        count:0,
         inCart: false,
         title: "Samsung s9",
         img: 'images/grand.png',
@@ -20,6 +22,7 @@ export const storeProducts = [
     },
     {
         id: 3,
+        count:0,
         inCart: false,
         title: "Nokia 7",
         img: 'images/j2.png',
@@ -30,6 +33,7 @@ export const storeProducts = [
     },
     {
         id: 4,
+        count:0,
         inCart: false,
         title: "Google pixel 4",
         img: 'images/p7.png',
@@ -40,6 +44,7 @@ export const storeProducts = [
     },
     {
         id: 5,
+        count:0,
         inCart: false,
         title: "Google pixel 5",
         img: 'images/p7.png',
@@ -49,6 +54,7 @@ export const storeProducts = [
             '\n '
     }, {
         id: 6,
+        count:0,
         inCart: false,
         title: "iPhone 7",
         img: 'images/iphone7.png',
@@ -58,6 +64,7 @@ export const storeProducts = [
             '\n '
     }, {
         id: 7,
+        count:0,
         inCart: false,
         title: "New Phone",
         img: 'images/pp.png',
@@ -68,6 +75,7 @@ export const storeProducts = [
     },
     {
         id: 8,
+        count:0,
         inCart: false,
         title: "Samsung s8",
         img: 'images/s8.png',

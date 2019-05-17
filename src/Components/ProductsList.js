@@ -18,7 +18,6 @@ class ProductsList extends Component {
                             <ProductConsumers>
                                 {
                                     (value) => {
-                                        // console.log(value)
                                         return value.products.map((product) => {
                                             return <Product key={product.id} product={product}
                                                             handleDetails={value.handleDetails}
