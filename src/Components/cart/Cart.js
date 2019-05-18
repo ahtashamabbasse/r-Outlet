@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {ProductConsumers} from "../../context";
+import {ProductConsumers} from "../../context/context";
 import Title from '../Title'
 import Cartcolumn from "./Cartcolumn";
 import Emptycart from "./Emptycart";

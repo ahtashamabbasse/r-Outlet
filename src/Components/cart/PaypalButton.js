@@ -19,7 +19,8 @@ export default class PaypalButton extends React.Component {
 
         let env = 'sandbox';
         let currency = 'USD';
-        let total = this.props.cartTotal || 1;
+        let total = parseFloat(this.props.total).toFixed(2);
+        console.log(total)
 
         const client = {
             sandbox: process.env.REACT_APP_APP_ID,

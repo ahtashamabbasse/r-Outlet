@@ -4,7 +4,7 @@ import './../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Link} from "react-router-dom";
 import PropTypes from 'prop-types'
-import {ProductConsumers} from "../context";
+import {ProductConsumers} from "../context/context";
 
 export default class Product extends Component {
 

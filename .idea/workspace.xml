@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="918ba1d2-193e-4c5b-b02f-8294679de27b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ProductsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ProductsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/cart/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/cart/Cartitem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/cart/Cartitem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/cart/Cartlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/cart/Cartlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/cart/Carttotal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/cart/Carttotal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/cart/Emptycart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/cart/Emptycart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/cart/PaypalButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/cart/PaypalButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,20 +23,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/cart/Cart.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/cart/PaypalButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+            <state relative-caret-position="288">
+              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Components/cart/Cartitem.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/cart/Carttotal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+            <state relative-caret-position="288">
+              <caret line="31" column="21" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <marker date="1558169963469" expanded="true" signature="162:174" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,16 +101,17 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/data.js" />
         <option value="$PROJECT_DIR$/src/Components/Default.js" />
-        <option value="$PROJECT_DIR$/src/context.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.env.development.local" />
-        <option value="$PROJECT_DIR$/src/Components/cart/PaypalButton.js" />
         <option value="$PROJECT_DIR$/src/Components/Product.js" />
         <option value="$PROJECT_DIR$/src/Components/cart/Cartlist.js" />
         <option value="$PROJECT_DIR$/src/Components/cart/Carttotal.js" />
         <option value="$PROJECT_DIR$/src/Components/cart/Emptycart.js" />
         <option value="$PROJECT_DIR$/src/Components/cart/Cart.js" />
         <option value="$PROJECT_DIR$/src/Components/cart/Cartitem.js" />
+        <option value="$PROJECT_DIR$/src/context.js" />
+        <option value="$PROJECT_DIR$/src/context/context.js" />
+        <option value="$PROJECT_DIR$/src/Components/cart/PaypalButton.js" />
       </list>
     </option>
   </component>
@@ -165,16 +176,17 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Learning Projects\React 1\ecommerce\src\Components\cart" />
-      <recent name="E:\Learning Projects\React 1\ecommerce\src" />
-      <recent name="E:\Learning Projects\React 1\ecommerce\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Learning Projects\React 1\ecommerce\src\Components\cart" />
       <recent name="E:\Learning Projects\React 1\ecommerce\public\images" />
       <recent name="E:\Learning Projects\React 1\ecommerce\src" />
       <recent name="E:\Learning Projects\React 1\ecommerce\src\Components" />
+      <recent name="E:\Learning Projects\React 1\ecommerce\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Learning Projects\React 1\ecommerce\src\context" />
+      <recent name="E:\Learning Projects\React 1\ecommerce\src\Components\cart" />
+      <recent name="E:\Learning Projects\React 1\ecommerce\src" />
       <recent name="E:\Learning Projects\React 1\ecommerce\public" />
     </key>
   </component>
@@ -229,12 +241,12 @@
       <workItem from="1554625394756" duration="38000" />
       <workItem from="1557506007599" duration="47053000" />
       <workItem from="1558119353798" duration="14000" />
-      <workItem from="1558119737863" duration="11954000" />
+      <workItem from="1558119737863" duration="12256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97920000" />
+    <option name="totallyTimeSpent" value="98222000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -255,7 +267,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44680852" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44680852" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,16 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/context.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="148" column="37" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -506,30 +508,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/cart/PaypalButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/cart/Carttotal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-          <folding>
-            <marker date="1558169963469" expanded="true" signature="162:174" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/cart/Cartlist.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/cart/Cartitem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -540,10 +529,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/cart/Cartitem.js">
+    <entry file="file://$PROJECT_DIR$/src/context/context.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        <state relative-caret-position="162">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/cart/Carttotal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1558169963469" expanded="true" signature="162:174" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/cart/PaypalButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

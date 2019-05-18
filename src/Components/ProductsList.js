@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Title from "./Title";
-import {ProductConsumers} from "../context";
+import {ProductConsumers} from "../context/context";
 import Product from "./Product";
 
 class ProductsList extends Component {

@@ -3,7 +3,7 @@ import './../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {ButtonContainer} from "./Button";
 import {Link} from "react-router-dom";
-import {ProductConsumers} from "../context";
+import {ProductConsumers} from "../context/context";
 
 class Details extends Component {
     render() {
