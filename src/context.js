@@ -7,7 +7,7 @@ class ProductProvider extends Component {
 
     state = {
         products: [],
-        cart: [],
+        cart: storeProducts,
         productDetails: productDetails,
         modalProduct: productDetails,
         modalOpen: false,
@@ -147,7 +147,7 @@ class ProductProvider extends Component {
     cartTotal=()=>{
         let subTotal=0;
         this.state.cart.map((item)=>{
-            return subTotal+=item.total
+            return subTotal+=item.total===undefined?0:item.total
         });
         let temptex=parseFloat(0.1 * subTotal).toFixed(2);
         const total=Number(temptex)+Number(subTotal);
