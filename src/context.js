@@ -13,7 +13,7 @@ class ProductProvider extends Component {
         modalOpen: false,
         cartTax: 0,
         cartSubTotal: 0,
-        carttotal: 0
+        cartTotal: 0
     };
     setProduct = () => {
         let tempProducts = [];
@@ -82,11 +82,14 @@ class ProductProvider extends Component {
         let index = tempProduct.indexOf(this.getItemCart(id));
         let product = tempProduct[index];
         product.count += 1;
+        product.total = product.count*product.price;
+
         this.setState(
             () => {
                 return {cart: tempProduct}
             },
             () => {
+                this.cartTotal()
                 console.log(this.state)
             }
         )
@@ -96,11 +99,13 @@ class ProductProvider extends Component {
         let index = tempProduct.indexOf(this.getItemCart(id));
         let product = tempProduct[index];
         product.count = product.count > 1 ? (product.count - 1) : 1;
+        product.total = product.count*product.price;
         this.setState(
             () => {
                 return {cart: tempProduct}
             },
             () => {
+                this.cartTotal()
                 console.log(this.state)
             }
         )
@@ -133,8 +138,8 @@ class ProductProvider extends Component {
             () => {
                 return {cart: []}
             },()=>{
-                this.setProduct()
-                this.cartTotal()
+                this.setProduct();
+                this.cartTotal();
             }
         )
     };
@@ -144,13 +149,13 @@ class ProductProvider extends Component {
         this.state.cart.map((item)=>{
             return subTotal+=item.total
         });
-        let temptex=parseFloat(0.1 * subTotal).toFixed(2)
+        let temptex=parseFloat(0.1 * subTotal).toFixed(2);
         const total=Number(temptex)+Number(subTotal);
         this.setState(()=>{
             return {
                 cartTax: temptex,
                 cartSubTotal: subTotal,
-                carttotal: total
+                cartTotal: total
             }
         })
 

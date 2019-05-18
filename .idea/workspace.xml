@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="918ba1d2-193e-4c5b-b02f-8294679de27b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/cart/Carttotal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/cart/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/cart/Carttotal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/cart/Carttotal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,11 +31,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/cart/Carttotal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+            <state relative-caret-position="72">
+              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1558125598542" expanded="true" signature="124:136" ph="..." />
+                <marker date="1558162021919" expanded="true" signature="124:136" ph="..." />
               </folding>
             </state>
           </provider>
@@ -46,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/context.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="142" column="92" lean-forward="true" selection-start-line="142" selection-start-column="92" selection-end-line="142" selection-end-column="92" />
+            <state relative-caret-position="432">
+              <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -243,12 +241,12 @@
       <workItem from="1554625394756" duration="38000" />
       <workItem from="1557506007599" duration="47053000" />
       <workItem from="1558119353798" duration="14000" />
-      <workItem from="1558119737863" duration="6553000" />
+      <workItem from="1558119737863" duration="7159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92519000" />
+    <option name="totallyTimeSpent" value="93125000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -263,7 +261,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.20684524" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.20684524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.502439" side_tool="true" weight="0.19717261" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -518,19 +516,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/cart/Carttotal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        <state relative-caret-position="72">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1558125598542" expanded="true" signature="124:136" ph="..." />
+            <marker date="1558162021919" expanded="true" signature="124:136" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/context.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="142" column="92" lean-forward="true" selection-start-line="142" selection-start-column="92" selection-end-line="142" selection-end-column="92" />
+        <state relative-caret-position="432">
+          <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

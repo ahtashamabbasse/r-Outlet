@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 
 export default function Carttotal({value}) {
-    const {clearCart,cartTax,cartSubTotal, carttotal} = value;
+    const {clearCart,cartTax,cartSubTotal, cartTotal} = value;
 
     return (
         <React.Fragment>
@@ -25,7 +25,7 @@ export default function Carttotal({value}) {
             </div>
 
             <div className={'mt-2 ml-sm-5  col-sm-10 text-capitalize text-right'}>
-                <h3>Total : <span>${carttotal}</span></h3>
+                <h3>Total : <span>${cartTotal}</span></h3>
             </div>
 
         </React.Fragment>
