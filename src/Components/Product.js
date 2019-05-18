@@ -9,7 +9,7 @@ import {ProductConsumers} from "../context";
 export default class Product extends Component {
 
     render() {
-        const {id, title, img, price, inCart, count, total} = this.props.product;
+        const {id, title, img, price, inCart} = this.props.product;
         return (
             <React.Fragment>
                 <Productwrapper className="col-md-6 col-lg-3 mx-auto my-1">

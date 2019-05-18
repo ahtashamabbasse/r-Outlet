@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 export default function Cartitem({item,value}) {
-    const {id, title, img, price, inCart, count=0, total} = item
+    const {id, title, img, price, count=0} = item
     const {incrementProduct,decrementProduct,removeProduct}=value
     const imgStyle = {
         height: "80px",

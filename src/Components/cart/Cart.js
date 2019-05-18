@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import '../../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {ProductConsumers} from "../../context";
-import {Link} from "react-router-dom";
-import {ButtonContainer} from "../Button";
 import Title from '../Title'
 import Cartcolumn from "./Cartcolumn";
 import Emptycart from "./Emptycart";
