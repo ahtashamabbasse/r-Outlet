@@ -14,7 +14,7 @@
 ## Basic Overview
 
 
-<p align="center">
+<p align="">
   <b>r-Outlet</b> is shopping cart prototype shows how React components and context API can be used to build a
   friendly user experience with instant visual updates and scaleable code in ecommerce applications.
 </p>
